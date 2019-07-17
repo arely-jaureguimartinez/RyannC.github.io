@@ -1,0 +1,255 @@
+h1 {
+  color: #586c65;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+
+  font-family: 'Open Sans', sans-serif;
+  color: #586c65;
+}
+p {
+  color: #586c65;
+}
+
+li{
+  color: #586c65;
+}
+
+body {
+  background-color: #C0E0D4;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+  display: flex;
+  border: 1px;
+  background-color:  #C0E0D4;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.navbar{
+    font-size: 35px;
+    flex: 1;
+  }
+  .nav {
+      top: 0;
+      position: sticky;
+      z-index: 2;
+  }
+
+  .nav a {
+      text-decoration: none;
+      display: inline-block;
+      background-color: White;
+      color: var(--blu);
+      float: left;
+      text-align: center;
+      border-bottom: 2.5px var(--blu) Solid;
+      font-weight: 600;
+      font-variant-caps: all-petite-caps;
+      letter-spacing: 5px;
+  }
+
+  .nav a:hover {
+      background-color: var(--blu);
+      color: White;
+      transition: 0.5s;
+  }
+
+  .nav .active {
+      background-color: var(--blu);
+      color: White;
+  }
+  .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.round{
+  border-radius: 90%;
+}
+
+.hereWeAre {
+    float: left;
+    margin-bottom: 2em;
+    padding: 2%;
+    transition: 0.25s;
+    width: 100%;
+}
+
+.hereWeAre:hover {
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2), 0 10px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hereWeAre:nth-child(even) {
+    background-color: var(--blu);
+}
+
+.hereWeAre:nth-child(odd) {
+    background-color: White;
+}
+
+.hereWeAre img {
+    border-radius: 50%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+}
+
+.hereWeAre:nth-child(odd) > div > h1 {
+    font-size: 2.5em;
+    color: hsl(0, 0%, 10%);
+}
+
+.hereWeAre:nth-child(even) > div > h1 {
+    font-size: 2.5em;
+    color: hsl(0, 0%, 90%);
+}
+
+.hereWeAre h2 {
+    font-size: 1.5em;
+}
+
+.hereWeAre:nth-child(even) > div > h2 {
+    color: hsl(0, 0%, 75%);
+}
+
+.hereWeAre:nth-child(odd) > div > h2 {
+    color: hsl(0, 0%, 40%);
+}
+
+.hereWeAre:nth-child(even) > div > p {
+    color: hsl(0, 0%, 90%);
+}
+
+.hereWeAre:nth-child(odd) > div > form input, .hereWeAre:nth-child(odd) > div > form textarea, .hereWeAre:nth-child(odd) > div > form button, .hereWeAre:nth-child(even) > div > form input, .hereWeAre:nth-child(even) > div > form textarea, .hereWeAre:nth-child(even) > div > form button {
+    width: 100%;
+    font-size: 1.5em;
+    margin: 3% 0px;
+    padding: 0.25em;
+}
+
+.hereWeAre:nth-child(odd) > div > form input[type="name"] {
+    border-bottom: 2px Solid;
+    border-bottom-color: var(--red);
+    background-color: White;
+    color: var(--red);
+}
+
+.hereWeAre:nth-child(odd) > div > form input[type="email"] {
+    border-bottom: 2px Solid;
+    border-bottom-color: var(--red);
+    background-color: White;
+    color: var(--red);
+}
+
+.hereWeAre:nth-child(odd) > div > form input::placeholder, .hereWeAre:nth-child(odd) > div > form textarea::placeholder {
+    color: var(--red);
+}
+
+.hereWeAre:nth-child(even) > div > form input::placeholder, .hereWeAre:nth-child(even) > div > form textarea::placeholder {
+    color: White;
+}
+
+.hereWeAre:nth-child(even) > div > form input[type="name"] {
+    border: 2px Solid;
+    border-color: var(--red);
+    background-color: White;
+    color: var(--red);
+}
+
+.hereWeAre:nth-child(even) > div > form input[type="email"] {
+    border: 2px Solid;
+    border-color: var(--red);
+    background-color: White;
+    color: var(--red);
+}
+
+.hereWeAre:nth-child(odd) > div > form input[type="name"] .hereWeAre:nth-child(even) > div > form input[type="name"] {
+    background-color: var(--red);
+    color: White;
+    transition: 0.5s;
+    cursor: text;
+}
+
+.hereWeAre:nth-child(odd) > div > form input[type="email"] .hereWeAre:nth-child(even) > div > form input[type="email"] {
+    background-color: var(--red);
+    color: White;
+    transition: 0.5s;
+    cursor: text;
+}
+
+
+.hereWeAre:nth-child(odd) > div > form textarea, .hereWeAre:nth-child(even) > div > form textarea {
+    overflow-y: scroll;
+    resize: none;
+    border: 2px Solid;
+    border-color: var(--red);
+    background-color: White;
+    color: var(--red);
+}
+
+.hereWeAre:nth-child(odd) > div > form textarea:focus, .hereWeAre:nth-child(even) > div > form textarea {
+    background-color: var(--red);
+    color: White;
+    transition: 0.5s;
+    cursor: text;
+}
+
+.hereWeAre:nth-child(odd) > div > form button[type="submit"] {
+    text-decoration: none;
+    background-color: White;
+    display: inline-block;
+    color: var(--red);
+    float: left;
+    text-align: center;
+    border-top: 2.5px var(--red) Solid;
+    border-bottom: 2.5px var(--red) Solid;
+    font-weight: 600;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 5px;
+    margin-bottom: 0.5em;
+}
+
+.hereWeAre:nth-child(even) > div > form button[type="submit"] {
+    text-decoration: none;
+    background-color: var(--red);
+    display: inline-block;
+    color: white;
+    float: left;
+    text-align: center;
+    border: 2.5px var(--red) Solid;
+    font-weight: 600;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: 5px;
+    margin-bottom: 0.5em;
+}
+
+.hereWeAre:nth-child(odd) > div > form button[type="submit"]:hover {
+    background-color: var(--red);
+    color: White;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hereWeAre:nth-child(even) > div > form button[type="submit"]:hover {
+    background-color: White;
+    color: var(--red);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
